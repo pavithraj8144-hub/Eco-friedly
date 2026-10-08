@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eco-Friendly Products Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8f0;
+            margin: 0;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #1b5e20;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background: white;
+            width: 220px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+        }
+
+        .product h3 {
+            color: #2e7d32;
+        }
+
+        button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 30px;
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Eco-Friendly Products Store</h1>
+    <p>Choose Green. Live Green.</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Cart</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Our Eco-Friendly Products</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <h3>Bamboo Toothbrush</h3>
+            <p>Eco-friendly bamboo toothbrush.</p>
+            <p>Price: ₹50</p>
+            <button onclick="addToCart('Bamboo Toothbrush', 50)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Reusable Bag</h3>
+            <p>Reusable cotton shopping bag.</p>
+            <p>Price: ₹120</p>
+            <button onclick="addToCart('Reusable Bag', 120)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Steel Water Bottle</h3>
+            <p>Reusable stainless steel bottle.</p>
+            <p>Price: ₹350</p>
+            <button onclick="addToCart('Steel Water Bottle', 350)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Plantable Seed Pen</h3>
+            <p>A pen that can be planted after use.</p>
+            <p>Price: ₹40</p>
+            <button onclick="addToCart('Plantable Seed Pen', 40)">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Eco-Friendly Products Store</p>
+</footer>
+
+<script>
+    function addToCart(product, price) {
+        alert(product + " added to cart! Price: ₹" + price);
+    }
+</script>
+
+</body>
+</html>
